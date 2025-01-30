@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int a,count;
-    scanf("%d",&a);
+    int n,count;
+    scanf("%d",&n);
     count=0;
     while(n&1==0)
    
