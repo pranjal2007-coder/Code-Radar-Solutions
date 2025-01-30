@@ -7,9 +7,9 @@ int main() {
    count=0;
    while(n&1==o)
    {
-    n=n>>1
-    count++
-   };
+    n=n>>1;
+    count++;
+   }
    printf("%d",count);
     return 0;
 }
