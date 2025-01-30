@@ -4,7 +4,7 @@ int main() {
     int n,count;
     scanf("%d",&n);
     count=0;
-    while(n&0==0)
+    while(n&1==1)
    
     {
         n=n<<1;
