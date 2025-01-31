@@ -4,7 +4,7 @@
 int main() {
  int a;
  scanf("&d",&a);
- switch(a){
+  switch(a){
     case 1:printf("Monday");
     break;
     case 2:printf("Tuesday");
@@ -19,7 +19,8 @@ int main() {
     break;
     case 7:printf("Sunday");
     break;
-    default: printf("Invalid");    
+    default: printf("Invalid"); 
+    break;   
  }
     return 0;
 }
