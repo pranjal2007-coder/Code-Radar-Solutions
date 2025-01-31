@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
   int a,b;
@@ -7,7 +8,7 @@ int main() {
   scanf("%c",&ch) ;
   switch(ch){
     case '+': printf("%d",a+b);
-    
+            break;
     case '-': printf("%d",a-b);
     break;
     case '*': printf("%d",a*b);
