@@ -5,11 +5,14 @@ int main() {
  int a;
  scanf("&d",&a);
   switch(a){
-    case 1:printf("Monday");
+    case 1:
+    printf("Monday");
     break;
-    case 2:printf("Tuesday");
+    case 2:
+    printf("Tuesday");
     break;
-    case 3:printf("Wednesday");
+    case 3:
+    printf("Wednesday");
     break;
     case 4:printf("Thursday");
     break;
@@ -19,7 +22,7 @@ int main() {
     break;
     case 7:printf("Sunday");
     break;
-    default: printf("Invalid"); 
+    default:  printf("Invalid"); 
     break;   
  }
     return 0;
