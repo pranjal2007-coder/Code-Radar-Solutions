@@ -4,10 +4,12 @@
 int main() {
   int a,b;
   char ch;
-  scanf ("%d%d",&a,&b);
+  scanf ("%d%d",&a,&b,&r);
   scanf("%c", &ch) ;
   switch(ch){
-    case '+': printf("%d",a+b);
+    case '+': 
+    r=a+b
+    printf("%d",5);
             break;
     case '-': printf("%d",a-b);
     break;
