@@ -4,7 +4,7 @@ int main() {
     char c;
     scanf("%c",&c);
     if (c>='a'&& c<='z'|| c>='A'&& c<='Z'){
-    if (c='a'||'e'||'i'||'o'||'u'||'A'||'I'||'E'||'O'||'U')
+    if (c=='a'||'e'||'i'||'o'||'u'||'A'||'I'||'E'||'O'||'U')
     printf("Consonant");
     else printf("Vowel");
         }
