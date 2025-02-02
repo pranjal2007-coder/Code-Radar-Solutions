@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 int main() {
-  int a,b;
+  int a,b,r;
   char ch;
-  scanf ("%d%d",&a,&b,&r);
+  scanf ("%d%d",&a,&b);
   scanf("%c", &ch) ;
   switch(ch){
     case '+': 
