@@ -9,7 +9,7 @@ int main() {
   switch(ch){
     case '+': 
     r=a+b
-    printf("%d",5);
+    printf("%d",r);
             break;
     case '-': printf("%d",a-b);
     break;
