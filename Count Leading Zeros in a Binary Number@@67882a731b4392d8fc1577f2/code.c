@@ -1,15 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int n,count;
-    scanf("%d",&n);
-    count=0;
-    while((n|1)==0)
-   
-    {
-        n=n>>1;
-        count++;
+    int n,count=0,num;
+    scanf("%d",&num);
+ 
+    if (num==0){ 
+        printf("31");
     }
-    printf("%d",count);
+    mask=1<<31;
+    while ((num & mask)==0){
+        count++;
+        mask>>=1;
+    }
+    printf("%d",count)
     return 0;
 }
