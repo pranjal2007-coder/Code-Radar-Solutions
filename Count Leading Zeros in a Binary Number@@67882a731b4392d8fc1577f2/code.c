@@ -10,7 +10,7 @@ int main() {
     mask=1<<31;
     while ((num & mask)==0){
         count++;
-        mask>>=1;
+        mask >=1;
     }
     printf("%d",count);
     return 0;
