@@ -4,10 +4,10 @@ int main() {
     int n, i, flag = 1;
 
     // Input from user
-    printf("Enter a number: ");
+ 
     scanf("%d", &n);
     if (n <= 1) {
-        printf("%d is not a prime number.\n", n);
+        printf("Not prime\n", n);
         return 0;
     }
 
@@ -19,9 +19,9 @@ int main() {
         }
     }
 if (flag)
-        printf("%d is a prime number.\n", n);
+        printf("Prime\n", n);
     else
-        printf("%d is not a prime number.\n", n);
+        printf("Not prime\n", n);
 
     return 0;
 }
