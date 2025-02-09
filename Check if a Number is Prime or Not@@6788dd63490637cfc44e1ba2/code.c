@@ -1,27 +1,14 @@
-#include <stdio.h>
-
-int main() {
-    int n, i, flag = 1;
-
-    // Input from user
- 
-    scanf("%d", &n);
-    if (n <= 1) {
-        printf("Not Prime\n", n);
-        return 0;
-    }
-
-    // Check divisibility from 2 to sqrt(n)
-    for (i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            flag = 0;
-            break;
-        }
-    }
-if (flag)
-        printf("Prime\n", n);
-    else
-        printf("Not Prime\n", n);
-
-    return 0;
+#include<stdio.h>
+#include<math.h>
+int main(){
+int i,n;
+scanf("%d",&n);
+i=2;
+while(i<=n/2){
+ if (i%n==0){
+printf("Number is not prime");
+break; }
+   i++;
+}
+ printf("Prime number");
 }
