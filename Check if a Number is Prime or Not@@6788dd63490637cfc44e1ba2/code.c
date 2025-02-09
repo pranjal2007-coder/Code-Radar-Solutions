@@ -7,7 +7,7 @@ int main() {
  
     scanf("%d", &n);
     if (n <= 1) {
-        printf("Not prime\n", n);
+        printf("Not Prime\n", n);
         return 0;
     }
 
@@ -21,7 +21,7 @@ int main() {
 if (flag)
         printf("Prime\n", n);
     else
-        printf("Not prime\n", n);
+        printf("Not Prime\n", n);
 
     return 0;
 }
