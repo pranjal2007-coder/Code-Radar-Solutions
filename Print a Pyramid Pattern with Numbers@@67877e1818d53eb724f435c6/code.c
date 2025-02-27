@@ -2,9 +2,10 @@
 #include <stdio.h>
 int main(){
     int n,i,k,j;
+     int a=1;
     scanf("%d",&n);
     for(i=1;i<=n;i++){
-        int a=1;
+       
         for(k=1;k<=n-i;k++){
          printf(" ") ;  
         }
