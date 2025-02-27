@@ -10,5 +10,5 @@ int main(){
             
         }
   printf("\n"); 
-  ch++ }
+  ch++; }
 }
