@@ -16,7 +16,7 @@ int main() {
     // Ensure there are at least two elements
     if (n < 2) {
         
-        return -1;
+        return n;
     }
 
     // Initialize first and second with the first two elements properly
