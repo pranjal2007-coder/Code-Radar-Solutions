@@ -5,14 +5,14 @@ int main() {
     int n, i,shift,a[100];
     char ch;
 
-    printf("Enter the number of elements: ");
+    
     scanf("%d", &n);
 
-    printf("Enter the elements: ");
+    
     for (i = 0; i < n; i++)
         scanf("%d", &a[i]);
 
-    printf("Enter the number of shifts: ");
+    
     scanf("%d", &shift);
 
     int temp;
