@@ -1,7 +1,7 @@
 // Your code here...
 #include <stdio.h>
 int main(){
-int n,;
+int n;
 scanf("%d",&n);
 
  int a[n];
