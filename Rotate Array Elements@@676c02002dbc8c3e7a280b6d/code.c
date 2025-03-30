@@ -1,32 +1,40 @@
-// Your code here...
-#include<stdio.h>
-int main()
-{
-int N,ele,posi;
-scanf("%d",&N);
-
-int arr[N],i;
-
-for (int i=0;i<N;i++)
-    scanf("%d",&arr[i]);
-
-printf("New element: ");
-scanf("%d%d",&ele);
-
-printf("Position:");
-scanf("%d",&posi);
-
-N++;
+#include <stdio.h>
 
 
-for (int i=N-1;i>posi;i--)
-    arr[i]=arr[i-1];
+int main() {
+    int n, i,shift,a[100];
+    char ch;
 
-    arr[posi] = ele;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
 
-for (int i=0;i<N;i++)
-    printf("%d ",arr[i]);
+    printf("Enter the elements: ");
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Enter the number of shifts: ");
+    scanf("%d", &shift);
+
+    int temp;
+
+
+    for (int k=1;k<=shift;k++)
+    {
+
+
+    temp=a[0];
+    for(i=0;i<n;i++)
+   a[i]=a[i+1];
+
+   a[n-1]=temp;
+
+    }
+ for (i = 0; i < n; i++)
+        printf("%d ", a[i]);
 
     return 0;
 }
+
+
+
 
