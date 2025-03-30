@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 void count_freq(int a[], int n) {
@@ -26,12 +25,10 @@ void count_freq(int a[], int n) {
 
 int main() {
     int n, i;
-
-    printf("Enter the number of elements: ");
     scanf("%d", &n);
 
     int a[n];
-    printf("Enter the elements: ");
+    
     for (i=0;i<n; i++)
         scanf("%d", &a[i]);
 
