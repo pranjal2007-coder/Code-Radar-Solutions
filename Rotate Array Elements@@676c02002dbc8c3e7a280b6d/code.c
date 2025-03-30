@@ -1,40 +1,29 @@
 #include <stdio.h>
 
-
 int main() {
-    int n, i,shift,a[100];
-    char ch;
+    int n, i, shift, a[100];
 
-    
     scanf("%d", &n);
 
-    
     for (i = 0; i < n; i++)
         scanf("%d", &a[i]);
 
-    
     scanf("%d", &shift);
 
     int temp;
 
+    // Perform left rotation 'shift' times
+    for (int k = 0; k < shift; k++) { // Start k from 0 instead of 1
+        temp = a[0]; // Store the first element
 
-    for (int k=1;k<=shift;k++)
-    {
+        for (i = 0; i < n - 1; i++)
+            a[i] = a[i + 1]; // Shift elements left
 
-
-    temp=a[0];
-    for(i=0;i<n;i++)
-   a[i]=a[i+1];
-
-   a[n-1]=temp;
-
+        a[n - 1] = temp; // Move stored element to the end
     }
- for (i = 0; i < n; i++)
+
+    for (i = 0; i < n; i++)
         printf("%d\n", a[i]);
 
     return 0;
 }
-
-
-
-
