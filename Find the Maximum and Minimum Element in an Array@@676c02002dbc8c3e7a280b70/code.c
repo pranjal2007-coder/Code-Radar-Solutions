@@ -11,7 +11,7 @@ scanf("%d",&n);
     }
 int min,max;
 min=max=a[0];
-    for (i = 0; i < n; i++) {
+    for (i = 1; i < n; i++) {
         if (a[i]<n)
             min=a[i];
        if (a[i]>max)
