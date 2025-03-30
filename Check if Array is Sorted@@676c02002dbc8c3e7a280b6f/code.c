@@ -4,13 +4,13 @@ int main() {
     int n, sorted = 1; // Assume array is sorted
 
     // Input size of array
-    printf("Enter the number of elements: ");
+    
     scanf("%d", &n);
 
     int arr[n];
 
     // Input array elements
-    printf("Enter %d elements: ", n);
+    
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
