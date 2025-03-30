@@ -15,8 +15,8 @@ int main() {
 
     // Ensure there are at least two elements
     if (n < 2) {
-        printf("No second largest element\n");
-        return 0;
+        
+        return -1;
     }
 
     // Initialize first and second with the first two elements properly
