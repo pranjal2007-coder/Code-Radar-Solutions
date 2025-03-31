@@ -1,12 +1,13 @@
+
 #include <stdio.h>
 
-void leftRotate(int arr[], int n, int k) {
-    k = k % n; // Optimize the shift value
-    for (int i = k; i < n; i++)  
-        printf("%d\n", arr[i]); // Print elements from k to n-1
+void rightRotate(int arr[], int n, int k) {
+    k = k % n; // Optimize shift value
+    for (int i = n - k; i < n; i++)  
+        printf("%d ", arr[i]); // Print last 'k' elements first
     
-    for (int i = 0; i < k; i++)  
-        printf("%d\n", arr[i]); // Print first k elements at the end
+    for (int i = 0; i < n - k; i++)  
+        printf("%d ", arr[i]); // Print first 'n-k' elements next
 }
 
 int main() {
@@ -20,7 +21,7 @@ int main() {
     
     scanf("%d", &k);  
 
-    leftRotate(arr, n, k); // Call function
+    rightRotate(arr, n, k); // Call function
 
     return 0;
 }
