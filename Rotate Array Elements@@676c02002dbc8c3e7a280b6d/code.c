@@ -3,7 +3,7 @@
 void leftRotate(int arr[], int n, int k) {
     k = k % n; // Optimize the shift value
     for (int i = k; i < n; i++)  
-        printf("%d ", arr[i]); // Print elements from k to n-1
+        printf("%d\n", arr[i]); // Print elements from k to n-1
     
     for (int i = 0; i < k; i++)  
         printf("%d\n", arr[i]); // Print first k elements at the end
