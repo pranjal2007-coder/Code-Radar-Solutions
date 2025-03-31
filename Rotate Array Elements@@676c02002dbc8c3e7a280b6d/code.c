@@ -1,44 +1,26 @@
 #include <stdio.h>
 
-void leftRotate(int arr[], int n, int shift) {
-    shift = shift % n; // Optimize shift value
-    if (shift == 0) return; // No rotation needed
-
-    int temp[shift]; // Temporary array to store first 'shift' elements
-
-    // Copy first 'shift' elements to temp
-    for (int i = 0; i < shift; i++)
-        temp[i] = arr[i];
-
-    // Shift remaining elements to the left
-    for (int i = 0; i < n - shift; i++)
-        arr[i] = arr[i + shift];
-
-    // Copy temp elements to the correct position at the end
-    for (int i = 0; i < shift; i++)
-        arr[n - shift + i] = temp[i];
+void leftRotate(int arr[], int n, int k) {
+    k = k % n; // Optimize the shift value
+    for (int i = k; i < n; i++)  
+        printf("%d ", arr[i]); // Print elements from k to n-1
+    
+    for (int i = 0; i < k; i++)  
+        printf("%d\n", arr[i]); // Print first k elements at the end
 }
 
 int main() {
-    int n, shift;
+    int n, k;
+    
+    scanf("%d", &n);  
+    int arr[n];  
 
-    // Take input
-    scanf("%d", &n);
-    int a[n]; // Variable-length array
+    for (int i = 0; i < n; i++)  
+        scanf("%d", &arr[i]);  
+    
+    scanf("%d", &k);  
 
-    for (int i = 0; i < n; i++)
-        scanf("%d", &a[i]);
-
-    scanf("%d", &shift);
-
-    // Rotate only if n > 1
-    if (n > 1) {
-        leftRotate(a, n, shift);
-    }
-
-    // Print the rotated array in a single line
-    for (int i = 0; i < n; i++)
-        printf("%d ", a[i]);
+    leftRotate(arr, n, k); // Call function
 
     return 0;
 }
