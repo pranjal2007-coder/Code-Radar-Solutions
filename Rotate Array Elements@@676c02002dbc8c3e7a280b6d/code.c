@@ -4,10 +4,10 @@
 void rightRotate(int arr[], int n, int k) {
     k = k % n; // Optimize shift value
     for (int i = n - k; i < n; i++)  
-        printf("%d ", arr[i]); // Print last 'k' elements first
+        printf("%d\n", arr[i]); // Print last 'k' elements first
     
     for (int i = 0; i < n - k; i++)  
-        printf("%d ", arr[i]); // Print first 'n-k' elements next
+        printf("%d\n", arr[i]); // Print first 'n-k' elements next
 }
 
 int main() {
